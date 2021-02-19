@@ -1,0 +1,90 @@
+.mlibre-color {
+    background-color: #fff159
+}
+
+.bg-main {
+    background: #e6e6e6
+}
+
+#item-title, #item-price {
+    font-size: .8em;
+}
+
+#item-iteraction, #item-qty {
+    font-size: .75em;
+}
+
+#products-toolbar {
+    width: 60px;
+    overflow: hidden;
+    transition: all .5s;
+}
+
+#products-toolbar:hover {
+    width: 180px;
+    overflow: hidden;
+}
+
+#products-toolbar > a > i {
+    font-size: 1.5em;
+}
+
+#products-toolbar > a > i > span {
+    font-size: 0.6em;
+}
+
+#navbar {
+    font-size: .8em;
+}
+
+#logo {
+    width: 100%;
+}
+
+#items-search > i, #items-search > span {
+    font-size: .8em;
+}
+
+#items-filter {
+    outline: none;
+}
+
+/* sm breackpoint */
+@media screen and (min-width: 576px) {
+    #navbar {
+        font-size: 1em;
+    }
+}
+
+/* md breackpoint */
+@media screen and (min-width: 768px) {
+    #item-title, #item-price {
+        font-size: 1em;
+    }
+    #item-iteraction, #item-qty {
+        font-size: .9em;
+    }
+}
+
+/* lg breackpoint */
+@media screen and (min-width: 992px) {
+    #item-title, #item-price {
+        font-size: 1.2em;
+    }
+    #item-iteraction, #item-qty {
+        font-size: 1em;
+    }
+    #logo {
+        width: 75%;
+    }
+    #items-search > i, #items-search > span {
+        font-size: 1em;
+    }
+    
+}
+
+/* xl breackpoint */
+@media screen and (min-width: 1200px) {
+
+}
+

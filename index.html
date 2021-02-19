@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="/imgs/favicon.png" type="image/x-icon">
+    <title>Mercado Libre</title>
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="/node_modules/bootstrap-icons/font/bootstrap-icons.css">
+</head>
+<body>
+
+<!-- HEADER -->
+
+  <div class="container-fluid mlibre-color  px-5">
+    <div class="row d-flex py-3">
+      <!-- LOGO -->
+      <a class="col-3 col-md-2 p-1" href="#">
+        <img src="/imgs/logo-mlibre2.png" alt="logo" id="logo">
+      </a>
+      <!-- FORM -->
+      <form class="col-9 col-md-10 d-inline-flex">
+        <input class="form-control me-2" type="search" placeholder="Buscá productos, marcas y más..." aria-label="Search">
+        <a href="#" class="navbar-text">
+          <i class="bi bi-search text-secondary fs-5"></i>
+        </a>
+      </form>
+    </div>
+      
+  </div>
+
+<!-- NAVBAR -->
+
+  <nav class="navbar navbar-expand-lg navbar-light mlibre-color">
+    <div class="container-fluid px-4">
+
+        <!-- USER LINKS -->
+        <nav class="nav col-10 col-lg-5 order-lg-last justify-content-lg-end" id="navbar">
+          <a class="nav-link active text-secondary px-0 mx-2" aria-current="page" href="#">
+            <i class="bi bi-person-circle"><span class="ms-1 fst-normal">USER</span></i>
+          </a>
+          <a class="nav-link px-0 text-secondary mx-2" href="#">Mis Compras</a>
+          <a class="nav-link px-0 text-secondary mx-2" href="#">Favoritos</a>
+          <a class="nav-link px-0 text-secondary mx-2" href="#"><i class="bi bi-bell"></i></a>
+          <a class="nav-link px-0 text-secondary mx-2" href="#"><i class="bi bi-cart2"></i></a>
+        </nav>
+
+        <!-- NAVBAR TOGGLER -->
+        <a class="col-2 text-center display-6 text-secondary navbar-toggler px-0" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation" style="width: 50px">
+          <i class="bi bi-list "></i>
+        </a>
+
+        <!-- NAV LINKS -->
+        <div class="collapse navbar-collapse w-auto" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Categorias
+                </a>
+                <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="navbarDropdown">
+                  <li><a class="dropdown-item" href="#">Vehículos</a></li>
+                  <li><a class="dropdown-item" href="#">Inmuebles</a></li>
+                  <li><a class="dropdown-item" href="#">Tecnología</a></li>
+                  <li><a class="dropdown-item" href="#">Hogar y electrodomésticos</a></li>
+                  <li><a class="dropdown-item" href="#">Herramientas e Industrias</a></li>
+                  <li><a class="dropdown-item" href="#">Juguetes y bebés</a></li>
+                  <li><a class="dropdown-item" href="#">Deportes y aire libre</a></li>
+                  <li><a class="dropdown-item" href="#">Libros</a></li>
+                  <li><a class="dropdown-item" href="#">Accesorios para Vehículos</a></li>
+                  <li><a class="dropdown-item" href="#">Moda</a></li>
+                  <li><a class="dropdown-item" href="#">Belleza y cuidado personal</a></li>
+                  <li><a class="dropdown-item" href="#">Supermercado</a></li>
+                  <li><a class="dropdown-item" href="#">Agro</a></li>
+                  <li><a class="dropdown-item" href="#">Servicios</a></li>
+                  <li><a class="dropdown-item" href="#">Productos Sustentables</a></li>
+                  <li><a class="dropdown-item" href="#">Ver más categorías</a></li>
+                </ul>
+              </li>        
+              <li class="nav-item">
+                <a class="nav-link" aria-current="page" href="#">Ofertas</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Historial</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Supermercado</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Vender</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Ayuda</a>
+              </li>
+          </ul>          
+        </div>
+
+    </div>
+  </nav>
+
+<!-- MAIN -->
+  <div class="container-fluid bg-main p-0 ps-5 position-relative">
+
+    <!-- PRODUCTS TOOLBAR -->
+      <div class="bg-light text-muted d-flex flex-column position-absolute top-0 start-0 bottom-0" id="products-toolbar">
+          <a class="my-5 nav-link text-secondary">  
+            <i class="bi bi-list mx-1 fst-normal fw-bold d-inline-flex"><span class="fs-6 text-nowrap ms-3">Mi Cuenta</span></i>
+          </a>
+          <a class="nav-link text-secondary">  
+            <i class="bi bi-bag my-2 mx-1 fst-normal d-inline-flex"><span class="text-nowrap ms-3">Compras</span></i>
+          </a>
+          <a class="nav-link text-secondary">  
+            <i class="bi bi-shop-window my-2 mx-1 fst-normal d-inline-flex"><span class="text-nowrap ms-3">Ventas</span></i>
+          </a>
+          <a class="nav-link text-secondary">  
+            <i class="bi bi-cash-stack my-2 mx-1 fst-normal d-inline-flex"><span class="text-nowrap ms-3">Mercado Crédito</span></i>
+          </a>
+          <a class="nav-link text-secondary">  
+            <i class="bi bi-calendar4 my-2 mx-1 fst-normal d-inline-flex"><span class="text-nowrap ms-3">Suscripciones</span></i>
+          </a>
+          <a class="nav-link text-secondary">  
+            <i class="bi bi-receipt my-2 mx-1 fst-normal d-inline-flex"><span class="text-nowrap ms-3">Facturación</span></i> 
+          </a>
+          <a class="nav-link text-secondary">  
+            <i class="bi bi-gear my-2 mx-1 fst-normal d-inline-flex"><span class="text-nowrap ms-3">Configuración</span></i>
+          </a> 
+      </div>
+
+<!-- PRODUCTS SECTION -->
+    <div class="p-5 bg-main" id="products-section">
+
+      <nav aria-label="breadcrumb">
+        <ol class="breadcrumb container ">
+          <li class="breadcrumb-item "><a class="text-secondary text-muted text-decoration-none" href="#">Ventas </a></li>
+          <li class="breadcrumb-item fs-6" aria-current="page">Publicaciones</li>
+        </ol>
+      </nav>
+           
+      <div class="container my-4" id="items-search">
+        <i class="bi bi-sliders text-muted text-nowrap ms-2"><span class="fst-normal ms-1">Filtrar y ordenar</span></i>
+        <i class="bi bi-search text-muted text-nowrap ms-2"><input class="border-0 bg-main" type="text" placeholder="Buscar por # o titulo" id="items-filter"></i>
+      </div>
+
+      <!-- ITEM-1 -->
+      <div class="container bg-white p-4 border border-top-0 d-flex align-items-center justify-content-between text-muted">
+            <div class="col-2 col-xl-1 p-2 rounded bg-main d-flex justify-content-center ">
+              <img src="/imgs/product-1.jpeg" alt="" class="w-75">
+            </div>
+
+            <div class="col-6">
+              <p class="my-1" id="item-title">Microfono Shure (1957)</p>
+              <p class="fw-lighter my-1" id="item-iteraction">18 visitas | 0 ventas</p>
+            </div>
+
+            <div class="col-2 col-xl-3 row">
+              <p class="m-0 col text-center" id="item-price">$5.700 </p>
+              <p class="fw-lighter m-0 col text-center align-self-center" id="item-qty">1u.</p>
+            </div>
+
+            <!-- PRODUCT TOOLS -->
+            <div class="dropstart col-1">
+              <a class="btn" type="button" id="dropdownMenu2" data-bs-toggle="dropdown" aria-expanded="false">
+                <i class="bi bi-three-dots-vertical navbar-toggler-icon fs-4"></i>
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="dropdownMenu2">
+                <li><button class="dropdown-item text-muted mb-1" type="button">Modificar</button></li>
+                <li><button class="dropdown-item text-muted mb-1" type="button">Ver publicacion</button></li>
+                <li><button class="dropdown-item text-muted mb-1" type="button">Pausar</button></li>
+                <li><button class="dropdown-item text-muted mb-1" type="button">Publicar similar</button></li>
+                <li><button class="dropdown-item text-muted mb-1" type="button">Necesito ayuda</button></li>
+              </ul>
+            </div>
+      </div>
+      <!-- ITEM-2 -->
+      <div class="container bg-white p-4 border border-top-0 d-flex align-items-center justify-content-between text-muted">
+            <div class="col-2 col-xl-1 p-2 rounded bg-main d-flex justify-content-center ">
+              <img src="/imgs/product-2.jpg" alt="" class="w-75">
+            </div>
+
+            <div class="col-6">
+              <p class="my-1" id="item-title">Bicicleta Vairo 3.8</p>
+              <p class="fw-lighter my-1" id="item-iteraction">217 visitas | 1 ventas</p>
+            </div>
+
+            <div class="col-2 col-xl-3 row">
+              <p class="m-0 col text-center" id="item-price">$75.500 </p>
+              <p class="fw-lighter m-0 col text-center align-self-center" id="item-qty">5u.</p>
+            </div>
+
+            <!-- PRODUCT TOOLS -->
+            <div class="dropstart col-1">
+              <a class="btn" type="button" id="dropdownMenu2" data-bs-toggle="dropdown" aria-expanded="false">
+                <i class="bi bi-three-dots-vertical navbar-toggler-icon fs-4"></i>
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="dropdownMenu2">
+                <li><button class="dropdown-item text-muted mb-1" type="button">Modificar</button></li>
+                <li><button class="dropdown-item text-muted mb-1" type="button">Ver publicacion</button></li>
+                <li><button class="dropdown-item text-muted mb-1" type="button">Pausar</button></li>
+                <li><button class="dropdown-item text-muted mb-1" type="button">Publicar similar</button></li>
+                <li><button class="dropdown-item text-muted mb-1" type="button">Necesito ayuda</button></li>
+              </ul>
+            </div>
+      </div>
+      <!-- ITEM-3 -->
+      <div class="container bg-white p-4 border border-top-0 d-flex align-items-center justify-content-between text-muted">
+            <div class="col-2 col-xl-1 p-2 rounded bg-main d-flex justify-content-center ">
+              <img src="/imgs/product-3.jpeg" alt="" class="w-75">
+            </div>
+
+            <div class="col-6">
+              <p class="my-1" id="item-title">Zapatilla Nike Air</p>
+              <p class="fw-lighter my-1" id="item-iteraction">324 visitas | 0 ventas</p>
+            </div>
+
+            <div class="col-2 col-xl-3 row">
+              <p class="m-0 col text-center" id="item-price">$8.600 </p>
+              <p class="fw-lighter m-0 col text-center align-self-center" id="item-qty">1u.</p>
+            </div>
+
+            <!-- PRODUCT TOOLS -->
+            <div class="dropstart col-1">
+              <a class="btn" type="button" id="dropdownMenu2" data-bs-toggle="dropdown" aria-expanded="false">
+                <i class="bi bi-three-dots-vertical navbar-toggler-icon fs-4"></i>
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="dropdownMenu2">
+                <li><button class="dropdown-item text-muted mb-1" type="button">Modificar</button></li>
+                <li><button class="dropdown-item text-muted mb-1" type="button">Ver publicacion</button></li>
+                <li><button class="dropdown-item text-muted mb-1" type="button">Pausar</button></li>
+                <li><button class="dropdown-item text-muted mb-1" type="button">Publicar similar</button></li>
+                <li><button class="dropdown-item text-muted mb-1" type="button">Necesito ayuda</button></li>
+              </ul>
+            </div>
+      </div>
+      <!-- ITEM-4 -->
+      <div class="container bg-white p-4 border border-top-0 d-flex align-items-center justify-content-between text-muted">
+          <div class="col-2 col-xl-1 p-2 rounded bg-main d-flex justify-content-center ">
+            <img src="/imgs/product-4.jpg" alt="" class="w-75">
+          </div>
+
+          <div class="col-6">
+            <p class="my-1" id="item-title">Tocadiscos Bluetooth Winco 4.7B (Celeste)</p>
+            <p class="fw-lighter my-1" id="item-iteraction">129 visitas | 2 ventas</p>
+          </div>
+
+          <div class="col-2 col-xl-3 row">
+            <p class="m-0 col text-center" id="item-price">$12.250 </p>
+            <p class="fw-lighter m-0 col text-center align-self-center" id="item-qty">15u.</p>
+          </div>
+
+          <!-- PRODUCT TOOLS -->
+          <div class="dropstart col-1">
+            <a class="btn" type="button" id="dropdownMenu2" data-bs-toggle="dropdown" aria-expanded="false">
+              <i class="bi bi-three-dots-vertical navbar-toggler-icon fs-4"></i>
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="dropdownMenu2">
+              <li><button class="dropdown-item text-muted mb-1" type="button">Modificar</button></li>
+              <li><button class="dropdown-item text-muted mb-1" type="button">Ver publicacion</button></li>
+              <li><button class="dropdown-item text-muted mb-1" type="button">Pausar</button></li>
+              <li><button class="dropdown-item text-muted mb-1" type="button">Publicar similar</button></li>
+              <li><button class="dropdown-item text-muted mb-1" type="button">Necesito ayuda</button></li>
+            </ul>
+          </div>
+      </div>
+    <!-- ITEM-5 -->
+    <div class="container bg-white p-4 border border-top-0 d-flex align-items-center justify-content-between text-muted">
+        <div class="col-2 col-xl-1 p-2 rounded bg-main d-flex justify-content-center ">
+          <img src="/imgs/product-5.jpg" alt="" class="w-75">
+        </div>
+
+        <div class="col-6">
+          <p class="my-1" id="item-title">Pink Floyd - The Wall (Orig. 1980)</p>
+          <p class="fw-lighter my-1" id="item-iteraction">1053 visitas | 0 ventas</p>
+        </div>
+
+        <div class="col-2 col-xl-3 row">
+          <p class="m-0 col text-center" id="item-price">$9.900 </p>
+          <p class="fw-lighter m-0 col text-center align-self-center" id="item-qty">1u.</p>
+        </div>
+
+        <!-- PRODUCT TOOLS -->
+        <div class="dropstart col-1">
+          <a class="btn" type="button" id="dropdownMenu2" data-bs-toggle="dropdown" aria-expanded="false">
+            <i class="bi bi-three-dots-vertical navbar-toggler-icon fs-4"></i>
+          </a>
+          <ul class="dropdown-menu" aria-labelledby="dropdownMenu2">
+            <li><button class="dropdown-item text-muted mb-1" type="button">Modificar</button></li>
+            <li><button class="dropdown-item text-muted mb-1" type="button">Ver publicacion</button></li>
+            <li><button class="dropdown-item text-muted mb-1" type="button">Pausar</button></li>
+            <li><button class="dropdown-item text-muted mb-1" type="button">Publicar similar</button></li>
+            <li><button class="dropdown-item text-muted mb-1" type="button">Necesito ayuda</button></li>
+          </ul>
+        </div>
+    </div>
+
+
+    </div>
+    </div>
+  </div>
+
+
+
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+</body>
+</html>
