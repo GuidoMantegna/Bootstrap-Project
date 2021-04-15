@@ -37,6 +37,10 @@
     font-size: .8em;
 }
 
+.nav-link {
+    cursor: pointer;
+}
+
 #logo {
     width: 100%;
 }
@@ -47,6 +51,29 @@
 
 #items-filter {
     outline: none;
+}
+
+#main-container {
+    min-height: 100vh;
+}
+
+::-webkit-scrollbar {
+    width: 10px;
+}
+::-webkit-scrollbar-track {
+    background: #e6e6e6; 
+}
+::-webkit-scrollbar-thumb {
+background: rgb(170, 170, 170); 
+height: 10px;
+}
+::-webkit-scrollbar-thumb:hover {
+    background: #555; 
+}
+  
+.dropdown-menu[style] {
+    right: -32px!important;
+    top: 40px !important;
 }
 
 /* sm breackpoint */

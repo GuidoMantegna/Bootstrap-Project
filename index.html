@@ -14,20 +14,19 @@
 <!-- HEADER -->
 
   <div class="container-fluid mlibre-color  px-5">
-    <div class="row d-flex py-3">
-      <!-- LOGO -->
-      <a class="col-3 col-md-2 p-1" href="#">
-        <img src="/imgs/logo-mlibre2.png" alt="logo" id="logo">
-      </a>
-      <!-- FORM -->
-      <form class="col-9 col-md-10 d-inline-flex">
-        <input class="form-control me-2" type="search" placeholder="Buscá productos, marcas y más..." aria-label="Search">
-        <a href="#" class="navbar-text">
-          <i class="bi bi-search text-secondary fs-5"></i>
+      <div class="row d-flex py-3">
+        <!-- LOGO -->
+        <a class="col-3 col-md-2 p-1" href="#">
+          <img src="/imgs/logo-mlibre2.png" alt="logo" id="logo">
         </a>
-      </form>
-    </div>
-      
+        <!-- FORM -->
+        <form class="col-9 col-md-10 d-inline-flex">
+          <input class="form-control me-2" type="search" placeholder="Buscá productos, marcas y más..." aria-label="Search">
+          <a href="#" class="navbar-text">
+            <i class="bi bi-search text-secondary fs-5"></i>
+          </a>
+        </form>
+      </div>
   </div>
 
 <!-- NAVBAR -->
@@ -99,11 +98,11 @@
   </nav>
 
 <!-- MAIN -->
-  <div class="container-fluid bg-main p-0 ps-5 position-relative">
+  <div class="bg-main p-0 ps-5 position-relative" id="main-container">
 
-    <!-- PRODUCTS TOOLBAR -->
-      <div class="bg-light text-muted d-flex flex-column position-absolute top-0 start-0 bottom-0" id="products-toolbar">
-          <a class="my-5 nav-link text-secondary">  
+  <!-- PRODUCTS TOOLBAR -->
+    <div class="bg-light text-muted d-flex flex-column position-absolute top-0 start-0 bottom-0" id="products-toolbar">
+          <a class="my-4 nav-link text-secondary">  
             <i class="bi bi-list mx-1 fst-normal fw-bold d-inline-flex"><span class="fs-6 text-nowrap ms-3">Mi Cuenta</span></i>
           </a>
           <a class="nav-link text-secondary">  
@@ -124,10 +123,10 @@
           <a class="nav-link text-secondary">  
             <i class="bi bi-gear my-2 mx-1 fst-normal d-inline-flex"><span class="text-nowrap ms-3">Configuración</span></i>
           </a> 
-      </div>
+    </div>
 
 <!-- PRODUCTS SECTION -->
-    <div class="p-5 bg-main" id="products-section">
+    <div class="p-3 p-sm-5 bg-main">
 
       <nav aria-label="breadcrumb">
         <ol class="breadcrumb container ">
@@ -142,7 +141,7 @@
       </div>
 
       <!-- ITEM-1 -->
-      <div class="container bg-white p-4 border border-top-0 d-flex align-items-center justify-content-between text-muted">
+      <div class="container bg-white p-4 border border-top-0 d-flex align-items-center justify-content-between text-muted" id="item-container">
             <div class="col-2 col-xl-1 p-2 rounded bg-main d-flex justify-content-center ">
               <img src="/imgs/product-1.jpeg" alt="" class="w-75">
             </div>
@@ -162,7 +161,7 @@
               <a class="btn" type="button" id="dropdownMenu2" data-bs-toggle="dropdown" aria-expanded="false">
                 <i class="bi bi-three-dots-vertical navbar-toggler-icon fs-4"></i>
               </a>
-              <ul class="dropdown-menu" aria-labelledby="dropdownMenu2">
+              <ul class="dropdown-menu" aria-labelledby="dropdownMenu2" id="product-tools-menu">
                 <li><button class="dropdown-item text-muted mb-1" type="button">Modificar</button></li>
                 <li><button class="dropdown-item text-muted mb-1" type="button">Ver publicacion</button></li>
                 <li><button class="dropdown-item text-muted mb-1" type="button">Pausar</button></li>
@@ -261,43 +260,40 @@
             </ul>
           </div>
       </div>
-    <!-- ITEM-5 -->
-    <div class="container bg-white p-4 border border-top-0 d-flex align-items-center justify-content-between text-muted">
-        <div class="col-2 col-xl-1 p-2 rounded bg-main d-flex justify-content-center ">
-          <img src="/imgs/product-5.jpg" alt="" class="w-75">
-        </div>
+      <!-- ITEM-5 -->
+      <div class="container bg-white p-4 border border-top-0 d-flex align-items-center justify-content-between text-muted">
+          <div class="col-2 col-xl-1 p-2 rounded bg-main d-flex justify-content-center ">
+            <img src="/imgs/product-5.jpg" alt="" class="w-75">
+          </div>
 
-        <div class="col-6">
-          <p class="my-1" id="item-title">Pink Floyd - The Wall (Orig. 1980)</p>
-          <p class="fw-lighter my-1" id="item-iteraction">1053 visitas | 0 ventas</p>
-        </div>
+          <div class="col-6">
+            <p class="my-1" id="item-title">Pink Floyd - The Wall (Orig. 1980)</p>
+            <p class="fw-lighter my-1" id="item-iteraction">1053 visitas | 0 ventas</p>
+          </div>
 
-        <div class="col-2 col-xl-3 row">
-          <p class="m-0 col text-center" id="item-price">$9.900 </p>
-          <p class="fw-lighter m-0 col text-center align-self-center" id="item-qty">1u.</p>
-        </div>
+          <div class="col-2 col-xl-3 row">
+            <p class="m-0 col text-center" id="item-price">$9.900 </p>
+            <p class="fw-lighter m-0 col text-center align-self-center" id="item-qty">1u.</p>
+          </div>
 
-        <!-- PRODUCT TOOLS -->
-        <div class="dropstart col-1">
-          <a class="btn" type="button" id="dropdownMenu2" data-bs-toggle="dropdown" aria-expanded="false">
-            <i class="bi bi-three-dots-vertical navbar-toggler-icon fs-4"></i>
-          </a>
-          <ul class="dropdown-menu" aria-labelledby="dropdownMenu2">
-            <li><button class="dropdown-item text-muted mb-1" type="button">Modificar</button></li>
-            <li><button class="dropdown-item text-muted mb-1" type="button">Ver publicacion</button></li>
-            <li><button class="dropdown-item text-muted mb-1" type="button">Pausar</button></li>
-            <li><button class="dropdown-item text-muted mb-1" type="button">Publicar similar</button></li>
-            <li><button class="dropdown-item text-muted mb-1" type="button">Necesito ayuda</button></li>
-          </ul>
-        </div>
-    </div>
-
+          <!-- PRODUCT TOOLS -->
+          <div class="dropstart col-1">
+            <a class="btn" type="button" id="dropdownMenu2" data-bs-toggle="dropdown" aria-expanded="false">
+              <i class="bi bi-three-dots-vertical navbar-toggler-icon fs-4"></i>
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="dropdownMenu2">
+              <li><button class="dropdown-item text-muted mb-1" type="button">Modificar</button></li>
+              <li><button class="dropdown-item text-muted mb-1" type="button">Ver publicacion</button></li>
+              <li><button class="dropdown-item text-muted mb-1" type="button">Pausar</button></li>
+              <li><button class="dropdown-item text-muted mb-1" type="button">Publicar similar</button></li>
+              <li><button class="dropdown-item text-muted mb-1" type="button">Necesito ayuda</button></li>
+            </ul>
+          </div>
+      </div>
 
     </div>
     </div>
   </div>
-
-
 
     <script src="js/popper.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
